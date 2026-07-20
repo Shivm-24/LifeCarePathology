@@ -1,0 +1,32 @@
+.navbar {
+    background: #ffffff !important;
+    box-shadow: 0 4px 18px rgba(0,0,0,.08);
+}
+
+.navbar-brand img {
+    transition: .3s;
+}
+
+.navbar-brand img:hover {
+    transform: scale(1.05);
+}
+
+.nav-link {
+    position: relative;
+    font-weight: 600;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 2px;
+    background: #198754;
+    transition: .3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
